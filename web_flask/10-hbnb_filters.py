@@ -1,9 +1,5 @@
 #!/usr/bin/python3
-"""Starts a Flask web application.
-The application listens on 0.0.0.0, port 5000.
-Routes:
-    /hbnb_filters: HBnB HTML filters page.
-"""
+"""Starts a Flask web application"""
 from models import storage
 from flask import Flask
 from flask import render_template
@@ -27,4 +23,4 @@ def teardown(exc):
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0")
+    app.run(host="0.0.0.0", port=5000)
